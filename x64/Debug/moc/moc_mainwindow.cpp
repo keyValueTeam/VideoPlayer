@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[23];
-    char stringdata0[476];
+    QByteArrayData data[26];
+    char stringdata0[525];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -51,10 +51,13 @@ QT_MOC_LITERAL(15, 320, 32), // "SltPlayProgressScrollBarReleased"
 QT_MOC_LITERAL(16, 353, 31), // "SltPlayProgressScrollBarClicked"
 QT_MOC_LITERAL(17, 385, 26), // "SltVolumeScrollBarReleased"
 QT_MOC_LITERAL(18, 412, 13), // "SltBtnAddFile"
-QT_MOC_LITERAL(19, 426, 11), // "resizeEvent"
-QT_MOC_LITERAL(20, 438, 13), // "QResizeEvent*"
-QT_MOC_LITERAL(21, 452, 5), // "event"
-QT_MOC_LITERAL(22, 458, 17) // "SltBtnRateClicked"
+QT_MOC_LITERAL(19, 426, 20), // "SltBtnChangePlayMode"
+QT_MOC_LITERAL(20, 447, 18), // "SltBtnClearClicked"
+QT_MOC_LITERAL(21, 466, 11), // "resizeEvent"
+QT_MOC_LITERAL(22, 478, 13), // "QResizeEvent*"
+QT_MOC_LITERAL(23, 492, 5), // "event"
+QT_MOC_LITERAL(24, 498, 17), // "SltBtnRateClicked"
+QT_MOC_LITERAL(25, 516, 8) // "finfofun"
 
     },
     "MainWindow\0SltBtnPlayClicked\0\0"
@@ -69,8 +72,9 @@ QT_MOC_LITERAL(22, 458, 17) // "SltBtnRateClicked"
     "SltPlayProgressScrollBarReleased\0"
     "SltPlayProgressScrollBarClicked\0"
     "SltVolumeScrollBarReleased\0SltBtnAddFile\0"
+    "SltBtnChangePlayMode\0SltBtnClearClicked\0"
     "resizeEvent\0QResizeEvent*\0event\0"
-    "SltBtnRateClicked"
+    "SltBtnRateClicked\0finfofun"
 };
 #undef QT_MOC_LITERAL
 
@@ -80,7 +84,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      17,   14, // methods
+      20,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -88,23 +92,26 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   99,    2, 0x0a /* Public */,
-       3,    0,  100,    2, 0x0a /* Public */,
-       4,    0,  101,    2, 0x0a /* Public */,
-       5,    0,  102,    2, 0x0a /* Public */,
-       6,    0,  103,    2, 0x0a /* Public */,
-       7,    0,  104,    2, 0x0a /* Public */,
-       8,    1,  105,    2, 0x0a /* Public */,
-      10,    1,  108,    2, 0x0a /* Public */,
-      11,    1,  111,    2, 0x0a /* Public */,
-      13,    1,  114,    2, 0x0a /* Public */,
-      14,    1,  117,    2, 0x0a /* Public */,
-      15,    0,  120,    2, 0x0a /* Public */,
-      16,    0,  121,    2, 0x0a /* Public */,
-      17,    0,  122,    2, 0x0a /* Public */,
-      18,    0,  123,    2, 0x0a /* Public */,
-      19,    1,  124,    2, 0x0a /* Public */,
-      22,    0,  127,    2, 0x0a /* Public */,
+       1,    0,  114,    2, 0x0a /* Public */,
+       3,    0,  115,    2, 0x0a /* Public */,
+       4,    0,  116,    2, 0x0a /* Public */,
+       5,    0,  117,    2, 0x0a /* Public */,
+       6,    0,  118,    2, 0x0a /* Public */,
+       7,    0,  119,    2, 0x0a /* Public */,
+       8,    1,  120,    2, 0x0a /* Public */,
+      10,    1,  123,    2, 0x0a /* Public */,
+      11,    1,  126,    2, 0x0a /* Public */,
+      13,    1,  129,    2, 0x0a /* Public */,
+      14,    1,  132,    2, 0x0a /* Public */,
+      15,    0,  135,    2, 0x0a /* Public */,
+      16,    0,  136,    2, 0x0a /* Public */,
+      17,    0,  137,    2, 0x0a /* Public */,
+      18,    0,  138,    2, 0x0a /* Public */,
+      19,    0,  139,    2, 0x0a /* Public */,
+      20,    0,  140,    2, 0x0a /* Public */,
+      21,    1,  141,    2, 0x0a /* Public */,
+      24,    0,  144,    2, 0x0a /* Public */,
+      25,    0,  145,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -122,7 +129,10 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 20,   21,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 22,   23,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -149,8 +159,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 12: _t->SltPlayProgressScrollBarClicked(); break;
         case 13: _t->SltVolumeScrollBarReleased(); break;
         case 14: _t->SltBtnAddFile(); break;
-        case 15: _t->resizeEvent((*reinterpret_cast< QResizeEvent*(*)>(_a[1]))); break;
-        case 16: _t->SltBtnRateClicked(); break;
+        case 15: _t->SltBtnChangePlayMode(); break;
+        case 16: _t->SltBtnClearClicked(); break;
+        case 17: _t->resizeEvent((*reinterpret_cast< QResizeEvent*(*)>(_a[1]))); break;
+        case 18: _t->SltBtnRateClicked(); break;
+        case 19: _t->finfofun(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -196,13 +209,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 20)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 20;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 17)
+        if (_id < 20)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 20;
     }
     return _id;
 }

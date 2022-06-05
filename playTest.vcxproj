@@ -86,12 +86,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="function.cpp" />
+    <ClCompile Include="jsonData.cpp" />
+    <ClCompile Include="Musicinfo.cpp" />
+    <ClCompile Include="MylistWidget.cpp" />
     <ClCompile Include="MySlider.cpp" />
     <QtRcc Include="playTest.qrc" />
     <QtUic Include="playTest.ui" />
     <QtMoc Include="mainwindow.h" />
     <ClCompile Include="json.cpp" />
-    <ClCompile Include="jsonData.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -103,6 +105,8 @@
     <ClInclude Include="json-forwards.h" />
     <ClInclude Include="json.h" />
     <ClInclude Include="jsonData.h" />
+    <ClInclude Include="Musicinfo.h" />
+    <QtMoc Include="MylistWidget.h" />
     <QtMoc Include="MySlider.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

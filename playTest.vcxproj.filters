@@ -43,13 +43,19 @@
     <ClCompile Include="json.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="jsonData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MySlider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MylistWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Musicinfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,15 +71,21 @@
     <ClInclude Include="json-forwards.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="jsonData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="function.h">
+    <ClInclude Include="Musicinfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MySlider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MylistWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

@@ -84,7 +84,14 @@ QPushButton#btn_next {
 QPushButton#btn_next:hover {
     border-image:url(./icons/btn_next2.png);
 }
- 
+
+QPushButton#btn_playMode {
+    border-image:url(./icons/btn_playLoopList1.png);
+}
+QPushButton#btn_playMode:hover {
+    border-image:url(./icons/btn_playLoopList2.png);
+}
+
 QPushButton#btn_volumedown {
     border-image:url(./icons/btn_volumedown1.png);
 }
@@ -100,7 +107,15 @@ QPushButton#btn_volumeup {
 QPushButton#btn_volumeup:hover {
     border-image:url(./icons/btn_volumeup2.png);
 }
+
+QPushButton#btn_delete {
+    border-image:url(./icons/btn_delete1.png);
+}
  
+QPushButton#btn_delete:hover {
+    border-image:url(./icons/btn_delete2.png);
+}
+
 QSlider#durationSlider:handle:horizontal {
     border-image:url(./icons/handle.png);
 }

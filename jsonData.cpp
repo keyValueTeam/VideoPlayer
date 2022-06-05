@@ -1,9 +1,11 @@
 #include <unordered_map>
 #include <iostream> //读写io c++标准库
 #include <fstream> //读写文件 c++标准库
+#include <string> //字符串类 c++标准库
 #include <sstream> //字符串流 c++标准库
 #include "json.h"
-using namespace std;
+#include "jsonData.h"
+
 
 //用于判断是否存在该路径,路径和文件名以键值对形式存储在json中，key为路径（path），value为文件名（name）
 bool hasPath(string path) {
@@ -55,6 +57,7 @@ bool hasName(string name) {
 bool addFile(string name, string path) {
     ifstream ifs;
     ifs.open("./checkjson.json");
+
     Json::Reader reader;
     Json::Value root;
     if (!reader.parse(ifs, root, false))
@@ -156,7 +159,33 @@ bool deleteFileByName(string name) {
     os.close();
     return true;
 }
-
+//删除所有文件
+bool jsonFileClear()
+{
+    ifstream ifs;
+    ifs.open("./checkjson.json");
+    Json::Reader reader;
+    Json::Value root;
+    if (!reader.parse(ifs, root, false))
+    {
+        cerr << "parse failed \n";
+        return false;
+    }
+    string key;
+    while (root.size() != 0)
+    {
+        key = root.getMemberNames()[0];
+        root.removeMember(key);
+    }
+    ofstream os;
+    os.open("./checkjson.json");
+    Json::StyledWriter sw;
+    sw.write(root);
+    //将所有键值对写回json
+    os << sw.write(root);
+    os.close();
+    return true;
+}
 //返回所有Path，以vector<string>形式返回
 vector<string> getAllPath() {
     vector<string> allpath;

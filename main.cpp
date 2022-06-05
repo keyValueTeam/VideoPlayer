@@ -28,11 +28,8 @@ int main(int argc, char* argv[])
         /* 关闭文件 */
         file.close();
     }
-    //SetConsoleOutputCP(65001); //改成UTF-8编码
 
     MainWindow w;
     w.show();
-    QString str = "./myVideo/AGA - Wonderful U (Demo).mp3";
-    cout << isMP3(str) << endl;
     return a.exec();
 }
